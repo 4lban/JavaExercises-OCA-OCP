@@ -1,0 +1,32 @@
+REGULAR EXPRESSIONS (REGEX)
+
+used to:
+- Determine if a string matches a given template (email, address, URL)
+- All the substrings of the string matches a given template.
+
+A special template marker to identify character types:
+.		Dot, any character
+\d		A digit: [0-9]
+\D		A non-digit: [^0-9]
+\s 		A whitespace character: [\t\n\xOB\f\r]
+\S 		A non-whitespace character: [^'s]
+\w		A word character: [a-zA-Z_0-9]
+
+Quantifiers can be used to specify the number or length that part of a pattern should match or repeat
+*		Match 0 or more times
++ 		Match 1 ore more times
+? 		Match 1 or 0 times
+{n}		Match exactly n times
+{n,}	Match at least n times
+{n,m}	Match at least n but not more than m times
+
+ Meta-characters are used to group, divide, and perform special operations in patterns.
+ \		Escape the next meta-character (it becomes a normal/literal character)
+ ^ 		Match the beginning of the line
+ .		Match any character (except newline)
+ $ 		Match the end of the line (or before newline at the end)
+ |		Alternation ('or' statement)
+ ()		Grouping
+ []		Custom character class
+ 
+ Visual regex tester: http://regexpal.com/
