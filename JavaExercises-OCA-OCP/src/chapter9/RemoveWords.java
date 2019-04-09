@@ -1,4 +1,4 @@
-package Chapter9;
+package chapter9;
 
 public class RemoveWords {
 
