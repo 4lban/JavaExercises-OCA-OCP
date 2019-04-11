@@ -1,0 +1,31 @@
+HASHING
+
+Hashing means summarizing the data so that it can be categorized later on.
+(ex. finding an object inside several object instances)
+
+Hash Code Creation
+Summarizing the data by custom algorithm
+
+
+Technique used to find elements in a data structure quickly, without doing full linear search
+
+Important concepts:
+-Hash code: integer value used to find array index for data storage/retrieval
+-Hash table: array of elements arranged according  to hash code
+-Hash function: computes hash code for element; uses algorithm likely to 
+  produce different hash codes for different objects to minimize collisions
+  
+Default hashCode()
+-Hashes memory address of object; consistent with default equals() method
+-If you override equals(), you should also redefine hashCode()
+-For class you are defining, use product of hash of each field and a prime number,
+ then add these together - result is hash code
+ 
+ Example
+ public class Employe {
+ 	public int hashCOde() {
+ 		return 11*name.hashCode() + 13*new Double(salary).hashCode(); 
+ 	}
+ }
+ 
+ hashCodes will be used inside Collections
