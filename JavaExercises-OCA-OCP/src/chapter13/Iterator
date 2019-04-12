@@ -1,0 +1,25 @@
+The Iterator interface
+- An iterator is an object that will return the elements of a collection, one at a time
+- interface Iterator<E>
+	- boolean hasNext()
+		- Returns true if the iteration has more elements
+	- E next()
+		- Returns the next element in the iteration
+	- void remove()
+		- Removes from the underlying collection the last element returned by the iterator (optional operation)
+		
+		
+The ListIterator interface
+- An iterator is an object that will return the elements of a collection, one at a time
+- interface ListIterator<E>
+	- boolean hasNext()
+		- Returns true if the iteration has more elements
+	- E next()
+		- Returns the next element in the iteration
+	- boolean hasPrevious()
+		- Returns true if the iteration has previous elements
+	- E previous()
+		-Returns the previous element in the iteration
+	- void remove()
+		- Removes from the underlying collection the last element returned by the iterator (optional operation)
+	

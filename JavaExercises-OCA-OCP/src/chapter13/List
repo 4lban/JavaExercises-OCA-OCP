@@ -1,0 +1,14 @@
+The List iterface
+
+- A list is an ordered sequence of elements
+- interface List<E> extends Collection, Iterable
+- Some important List methods are:
+	- void add(int index, E element), void add(E element)
+	- E remove(int index)
+	- boolean remove(Object o)
+	- E set(int index, E element)
+	- E get(int index)
+	- int indexOf(Object o)
+	- int lastIndexOf(Object o)
+	- ListIterator<E> listIterator()
+		- A ListIterator is like an Iterator, but has, in addition, hasPrevious and previous methods

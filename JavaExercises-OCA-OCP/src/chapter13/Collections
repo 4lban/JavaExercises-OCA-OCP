@@ -1,0 +1,80 @@
+COLLECTIONS 
+
+A collection is a structured group of objects
+
+Answers these colletions
+1. Where to put the latest object?
+2. Can I get the first object?
+3. How to access an item?
+4. How to search for an exact item?
+5. Are items related to each other?
+6. Are duplicate items allowed?
+
+List
+1. Anywhere you want
+2. By index 0. Yes.
+3. Randomly. By index
+4. By iterating over all items
+5. Yes. You can access next or previous item
+6. Yes
+
+Map
+1. According to hashCode
+2. No. Putting orders are not defined
+3. By hashCode
+4. By hashCode
+5. No
+6. Yes
+
+Set
+1. According to hashCode
+2. No. Putting orders are not defined
+3. By hashCode
+4. By hashCode
+5. No
+6. No
+ 
+Stack
+1. At last
+2. No. 
+3. One by one. From last to first
+4. By iterating over all items
+5. No
+6. Yes
+
+The Collections hierarchy
+
+Collection   			Map
+|     					|
+|---Set					|---SortedMap 	
+|	|---SortedSet
+|
+|---List
+
+
+Types of COllection
+-Java supplies several types of Collection:
+	-Set: cannot contain duplicate elements, order is not important
+	-SortedSet: like a Set, but order is important
+	-List: may contain duplicate elements, order is important
+-Java also supplies some "collection-like" things:
+	-Map: a "dictionary" that associates keys with values, order is not important
+	-SortedMap: like a Map, but order is important
+-While you can get all the details from the Java API, you are expected
+(i.e. memorize):
+	-The signatures of the "most important" methods in each interface
+	-The most important implementations of each interface
+	
+The Collection interface
+-Much of the elegance of the Collections Framework arises from the intelligent of interfaces
+-The Collection interface specifies (among many other operations):
+	-boolean add(E o)
+	-boolean contains(Object o)
+	-boolean remove(Object o)
+	-boolean isEmpty()
+	-int size()
+	-Object[] toArray()
+	-Iterator<E> iterator()
+-You should learn all the methods of the COllection interface
+
+The
