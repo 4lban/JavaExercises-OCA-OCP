@@ -1,0 +1,59 @@
+MAP
+
+Map is a relation between set of keys and set of values
+
+
+USING MAPS
+Map is such a dictionary. It has a label and a description as an object instance.
+By accessing the labels, you may get the explanations or details.
+
+Map m = new HashMap();
+m.put("greatcustomer", customer);
+m.put("badcustomer", customer2);
+m.put("averagecustomer", customer3);
+
+Customer c = m.get("averagecustomer");
+
+
+KEYS IN MAPS
+- Define a key in the key space with type of String or Number(Integer, Float)
+- Define a relation between this key and the real value(Any object).
+
+- If key is a custom type, hashCode() method of the class must return as unique result
+  as possible for each instance. Because evenly distributed keys mean high performance.
+  
+  
+PUTTING A KEY INTO KEY SPACE
+- Keyspace has limited memory. Configurable but yet limited.
+- Lets say we have 16 possible memory block. Then any generated
+  key (with hashCode() method) will be put into a block with address
+  key % 16
+  
+   0	1	2	3   		- 1 goes to 1
+   4	5	6	7			- 17 goes to 17 % 16 = 1
+   8	9	10	11			- 33 goes to 33 % 16 = 1
+   12	13	14	15            instance goes to memory block
+   
+   
+PUTTING ELEMENTS TO MAP
+map.put(1, customer1)			1 goes to 1
+map.put(17, customer2)			17 goes to 17 % 16 = 1
+map.put(33, customer3)			33 goes to 33 % 16 = 1
+
+so all these three customer (LinkedList) will refer to that key space (1)
+
+
+GETTING ELEMENTS TO MAP
+map.get(33)		First find the key with hashCode(), in our case 1, then
+- Use equals() method to find the correct object in LinkedList
+   
+   
+LIST VS MAP
+- Map is dictionary. So you don't have to iterate over all the objects to find a desired object.
+- You only need to search inside the instances with the same hashCode.
+- If there are so many objects with same hashCode, linear search will take more time.
+- Put and get times is constant in maps.
+   
+- ArrayList is developed for storing the items in order.
+- Search operation is so slow compared to map. Because all the collection is 
+  iterated for finding the item.

@@ -33,27 +33,50 @@ public class ArrayListExample {
 		System.out.println("Size: " + integerList.size());
 		
 		//////////////////
-		System.out.println("\n********************************\n");
+		System.out.println("\n********ArrayList - Custom Objects*********\n");
 		
-		List<Integer> intList = new ArrayList<Integer>();
-		Integer i1 = new Integer(4);
-		Integer i2 = new Integer(5);
-		Integer i3 = new Integer(6);
-		Integer i4 = new Integer(7);
-		intList.add(i3);
-		System.out.println("Size of customer list: " + intList.size());
-		intList.add(0, i2);
-		System.out.println("Size of customer list: " + intList.size());
-		System.out.println("First item is: " + intList.get(0));
+		List<Customer> customerList = new ArrayList<Customer>();
+		Customer cust1 = new Customer(10, "Alban", "Maxhuni");
+		Customer cust2 = new Customer(20, "Ardian", "Maxhuni");
+		Customer cust3 = new Customer(30, "Advie", "Maxhuni");
+		Customer cust4 = new Customer(40, "Agon", "Gjonbalaj");
+		Customer cust5 = new Customer(50, "Ardiana", "Rama");
 		
-		int indexOfIntn = intList.indexOf(i2);
-		System.out.println("Index of value 5: " + indexOfIntn);
+		customerList.add(cust1);
+		System.out.println("Size of customer list: " + customerList.size());
 		
-		boolean isI1 = intList.contains(i1);
-		System.out.println("Is i1 in this List: " + isI1);
+		customerList.add(0, cust2);
+		System.out.println("Size of customer list: " + customerList.size());
+		System.out.println("First item of customer list: " + customerList.get(0));
 		
-		int intOfI1 = intList.indexOf(i1);
-		System.out.println("indexOfI1: " + intOfI1);
+		int indexOfCustomer = customerList.indexOf(cust2);
+		System.out.println("Index of Ardian Maxhuni: " + indexOfCustomer);
+		
+//		boolean isI1 = customerList.contains(cust1);
+//		System.out.println("Is i1 in this List: " + isI1);
+//		
+//		int intOfI1 = customerList.indexOf(cust1);
+//		System.out.println("indexOfI1: " + intOfI1);
+		
+		customerList.add(cust3);
+		customerList.add(cust4);
+		customerList.add(cust5);
+		
+		Customer c = new Customer(40, "ASdsds", "asdasd");
+		int indexOf4 = customerList.indexOf(c);
+		System.out.println("indexOf4: " + indexOf4);
+		
+		Customer agon = customerList.get(indexOf4);
+		System.out.println(agon);
+		
+		boolean isId4 = customerList.contains(c);
+		System.out.println("Is anybody there with id 4: " + isId4);
+		
+		Customer c2 = new Customer(26, "addsd", "asdsdas");
+		System.out.println(customerList.contains(c2));
+		
+		int indexOf26 = customerList.indexOf(c2);
+		System.out.println("indexOf26:" + customerList.indexOf(c2));
 		
 	}
 

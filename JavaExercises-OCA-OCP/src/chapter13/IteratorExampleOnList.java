@@ -9,60 +9,60 @@ public class IteratorExampleOnList {
 
 	public static void main(String[] args) {
 
-		List<Integer> integerList = new ArrayList<Integer>();
+		Customer cust1 = new Customer(10, "Alban", "Maxhuni");
+		Customer cust2 = new Customer(20, "Ardian", "Maxhuni");
+		Customer cust3 = new Customer(30, "Advie", "Maxhuni");
+		Customer cust4 = new Customer(40, "Agon", "Gjonbalaj");
+		Customer cust5 = new Customer(50, "Ardiana", "Rama");
 		
-		Integer int1 = new Integer(1);
-		Integer int2 = new Integer(2);
-		Integer int3 = new Integer(3);
-		Integer int4 = new Integer(4);
-		Integer int5 = new Integer(5);
+		List<Customer> customerList = new ArrayList<Customer>();
 		
-		integerList.add(int1);
-		integerList.add(int2);
-		integerList.add(int3);
-		integerList.add(int4);
-		integerList.add(int5);
+		customerList.add(cust1);
+		customerList.add(cust2);
+		customerList.add(cust3);
+		customerList.add(cust4);
+		customerList.add(cust5);
 		
-		Iterator<Integer> it = integerList.iterator();
+		Iterator<Customer> it = customerList.iterator();
 		
 		while (it.hasNext()) {
-			int val = (Integer) it.next();
+			Customer val = (Customer) it.next();
 			System.out.println(val);
 		}
 		
 		// if we need to iterate over array list once more 
 		// we need to get iterator again
-		it = integerList.iterator();
+		it = customerList.iterator();
 		System.out.println("---2nd time iteration----");
 		
 		while (it.hasNext()) {
-			int val = (Integer) it.next();
+			Customer val = (Customer) it.next();
 			
-			if (val == 3) {
+			if (val.getName().equals("Advie")) {
 				it.remove();
 			}
 			System.out.println(val);
 		}
 		
-		it = integerList.iterator();
+		it = customerList.iterator();
 		System.out.println("---Iteration after remove operation----");
 		while (it.hasNext()) {
-			int val = (Integer) it.next();
+			Customer val = (Customer) it.next();
 			System.out.println(val);
 		}
 		
 		System.out.println("\n******ListIterator*******\n");
 		
-		ListIterator<Integer> listIterator = integerList.listIterator();
+		ListIterator<Customer> listIterator = customerList.listIterator();
 		
 		while (listIterator.hasNext()) {
-			Integer i = listIterator.next();
+			Customer i = listIterator.next();
 			System.out.println(i);
 		}
 		
 		System.out.println("--iteration from end to beginning");
 		while (listIterator.hasPrevious()) {
-			Integer i = listIterator.previous();
+			Customer i = listIterator.previous();
 			System.out.println(i);
 		}
 		
