@@ -1,0 +1,11 @@
+The Set interface
+
+- A set is a collection like Map. The difference is sets:
+	- Do not allow duplicate items. If any object exists 
+	  with same hashCode() result and equality with 
+	  equals() method, the new object is not put.
+	- Don't use explicit key. hashCode() of each
+	  instance is the key itself.
+	  
+Set is used for DUPLICATE ITEM REMOVAL
+

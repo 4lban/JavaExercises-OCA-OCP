@@ -51,4 +51,9 @@ public class Customer {
 		return false;
 	}
 	
+	@Override
+	public int hashCode() {
+		return 11*id + 13*name.hashCode();
+	}
+	
 }

@@ -2,7 +2,7 @@ COLLECTIONS
 
 A collection is a structured group of objects
 
-Answers these colletions
+Answers these collections
 1. Where to put the latest object?
 2. Can I get the first object?
 3. How to access an item?
@@ -52,7 +52,7 @@ Collection   			Map
 |---List
 
 
-Types of COllection
+Types of Collection
 -Java supplies several types of Collection:
 	-Set: cannot contain duplicate elements, order is not important
 	-SortedSet: like a Set, but order is important
@@ -75,6 +75,5 @@ The Collection interface
 	-int size()
 	-Object[] toArray()
 	-Iterator<E> iterator()
--You should learn all the methods of the COllection interface
+-You should learn all the methods of the Collection interface
 
-The
