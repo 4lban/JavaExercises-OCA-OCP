@@ -38,9 +38,9 @@ public class ArrayListExample {
 		List<Customer> customerList = new ArrayList<Customer>();
 		Customer cust1 = new Customer(10, "Alban", "Maxhuni");
 		Customer cust2 = new Customer(20, "Ardian", "Maxhuni");
-		Customer cust3 = new Customer(30, "Advie", "Maxhuni");
+		Customer cust3 = new Customer(30, "Adi", "Maxhuni");
 		Customer cust4 = new Customer(40, "Agon", "Gjonbalaj");
-		Customer cust5 = new Customer(50, "Ardiana", "Rama");
+		Customer cust5 = new Customer(50, "Lana", "Rama");
 		
 		customerList.add(cust1);
 		System.out.println("Size of customer list: " + customerList.size());
