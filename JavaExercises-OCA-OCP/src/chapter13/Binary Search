@@ -1,0 +1,16 @@
+BINARY SEARCH
+
+The quickest search algorithm
+Implementation is in Collections and Arrays utility class
+
+Collection must be ordered according to search attribute
+(must be ordered before searching)
+
+Exists in Collections and Arrays class.
+
+Collections.binarySearch(Collection<T> items, T key) 
+	T must be a Comparable instance
+	
+Collections.binarySearch(Collection<T>, T key, Comparator comp) {
+		T a Comparable instance
+	}
