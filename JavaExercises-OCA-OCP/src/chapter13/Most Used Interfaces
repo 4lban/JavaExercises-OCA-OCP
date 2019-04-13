@@ -1,0 +1,27 @@
+MOST USED INTERFACES
+
+Some common interfaces shipped with JDK
+
+- Comparable: Compare magnitude of object instances
+- Clonable: Create a copy of object instances
+- Serializable: Converting object instances to byte streams
+
+
+COMPARABLE 
+- Make any class comparable in magnitude.
+- Used implicitly when you order a collection of instances by built-in classes such as
+  Collections.sort or Arrays.sort
+- The algorithm you defined in compareTo method will be the natural ordering of this class.
+  example order array of object by size
+
+class AnyClass implements Comparable {
+	int compareTo(Object o){
+	
+	}
+}
+
+COMPARETO METHOD
+method call						fact								result
+instance2.compareTo(instance1)	instance2 is greater than d1		1
+instance2.compareTo(instance1)	instance2 and instance1 are same	0
+instance2.compareTo(instance1)	instance2 is smaller than instance1	-1	

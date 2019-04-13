@@ -1,0 +1,15 @@
+COMPARATOR
+
+- An interface
+- A logical comparison of instances
+- Used implicitly by sort method of Array and Collections utility classes.
+
+method call						fact								result
+instance2.compare(instance1)	instance2 is greater than d1		1
+instance2.compare(instance1)	instance2 and instance1 are same	0
+instance2.compare(instance1)	instance2 is smaller than instance1	-1	
+
+- Let's write a custom Employee class called as MyEmployee.
+- This class will store salary, age and entrance date of the employee.
+- We want to sort the employees by their salary, age or entrance date.
+- That's why we will write SalaryComparatpr, AgeComparator and EntranceDateComparator
