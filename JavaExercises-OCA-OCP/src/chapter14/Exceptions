@@ -1,0 +1,45 @@
+Exceptions
+
+- Exception handling is an important aspect of object-oriented design
+	- the purpose of exceptions
+	- exception messages
+	- the try-catch statement
+	- propagating exceptions
+	- the exception class hierarchy
+	
+- An exception is an object that describes an unusual or erroneous situation
+- Exceptions are thrown by a program, and may be caught and handled by another
+  part of the program
+- A program can be separated into a normal execution flow and an exception
+  execution flow
+- An error is also represented an an object in Java, but usually represents a
+  unrecoverable situation and should not be caught
+    
+Java Exceptions
+- Examples of Java predefined exception classes (types):
+	IllegalArgumentException
+	ArrayIndexOutOfBoundsException
+	IOException
+	NullPointerException
+	
+Exception Handling
+- Java has a predefined set of exceptions and errors that can occur during execution
+- A program can deal with an exception in one of three ways:
+	- ignore it
+	- handle it where it occurs
+	- handle it an another place in the program
+- The manner in which an exception is processed is an important design consideration
+
+
+Catching Exception: Example
+
+try {
+	int value = Integer.parseInt(userTyped);
+}
+catch(NumberFormatException e)
+{
+	System.out.println("Hey, " + e.getMessage() + "is not an integer!");
+}
+finally {
+
+}
