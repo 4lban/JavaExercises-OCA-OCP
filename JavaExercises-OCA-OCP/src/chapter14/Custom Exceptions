@@ -1,0 +1,10 @@
+Custom Exceptions
+
+- We can throw an exception object of one of
+  these predefined types, or we can define our 
+  own exception classes
+  
+- We can extend Exception or one of its subclasses
+
+
+
