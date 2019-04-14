@@ -30,8 +30,8 @@ Unchecked Exceptions
 
 Checked Exceptions
 - An Exception is either checked or unchecked
-- A Checked exception either must be caught be a method, or must be listed in
-  throws clause of any method that may throw or propagate
+- A Checked exception either must be caught by a method, or must be listed in the
+  throws clause of any method that may throw or propagate it
 - A throws clause is appended to the method header
 - The compiler will issue an error if a checked exception is not handled
   
