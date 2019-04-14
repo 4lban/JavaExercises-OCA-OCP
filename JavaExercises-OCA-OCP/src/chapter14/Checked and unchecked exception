@@ -1,0 +1,37 @@
+Exception Class Hierarchy
+
+	    	  	Object
+				   ^
+				   |
+			   Throwable
+				   ^
+	  _____________|_____________
+	  |				   			|
+  Exception (Checked)	   	  Error (Unchecked)
+   	IOException					VitualMachineError
+   	SQLException				AssertionError
+   	...
+   	
+   	RunTimeExceptions (Unchecked)
+   		ArithmeticException
+   		NullException
+  							
+  							
+- Exception: Possible to try recovery
+- Error: Serious problem such as insufficient memory JVM hash
+  							
+  							
+Unchecked Exceptions
+- An Unchecked exception does not require explicit handling, though it could be 
+  processed	that way
+- The only unchecked exceptions in Java are objects of type RuntimeExceptions
+  or its descendants
+- Similar to RuntimeException and its descendants could not be caught
+
+Checked Exceptions
+- An Exception is either checked or unchecked
+- A Checked exception either must be caught be a method, or must be listed in
+  throws clause of any method that may throw or propagate
+- A throws clause is appended to the method header
+- The compiler will issue an error if a checked exception is not handled
+  
