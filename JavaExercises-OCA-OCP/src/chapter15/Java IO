@@ -1,0 +1,67 @@
+JAVA IO
+Input and output from/to file or screen or network
+
+Most of the time you need to interact with external environments.
+- You may read some data source from external sources (a file on harddisk, a URL on
+  internet, a socket)
+- You may persist the result to an external file, upload to a URL, send to a socket.
+- These operations are called as I/O. (Input/Output)
+
+JAVA IO CONCEOTS
+
+					JAVA IO
+		________________|_______________
+		|								|
+		NIO								IO
+	Newer but harder API,			More standard API, Stream based,
+	Block based, Faster				slower but easier
+	
+
+FILE SYSTEMS
+- Files are stores in a tree structure on operating systems. For instance
+	- Linux stores in a tree with root node /
+	- Windows stores files in a tree with root node C:\
+	- Files are organized in folders (directories)
+	- Files are leaf nodes and does not contain any leaves.
+	
+URI
+- URI: Uniform Resource Identifier
+- It is an address that may point to any resource.
+- If it is in internet it is called URL: Uniform Resource Locator
+
+
+SPECIFIC URI TYPES
+- URL: Any resource on net:
+  https://wikipedia.org/
+- Path: Any resource on file system:
+  C:\
+  /home/alban
+ 
+ADDRESSES OF FILES
+- In java, you need to escape backslash character.
+- So, you need to change all \ characters to \\ inside the file path.
+
+ADDRESSING TO FILES OR DIRECTORIES
+- Two classes are used to refer to a file or directory
+	- Path: After Java 7. Used in NIO.
+	- File: Has an address to a file or folder. We will learn this first.
+	
+WHAT FILE CAN DO WITH FOLDERS?
+- If directory, may
+	- List the directories
+	- Check read/write permissions, may change the permissions
+	- Delete, rename the folder
+	- Make folders inside
+	- Get the usable space
+	- Get the last modified time
+- If file, may
+	- Check read/write permissions, may change the permissions
+	- Delete, rename the file
+	- Get the size of the file
+	- Get the last modified time
+	- Can be used as the entrance point to a stream 
+	  read/write data to/from the JVM.
+
+
+
+ 

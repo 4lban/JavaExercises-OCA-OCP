@@ -1,0 +1,10 @@
+USING FILE OBJECTS
+
+- Address to a folder
+- Give the full path inside the constructor. Mind the escape characters.
+
+	File f = new File("C:\\oracle\\11.2.0\\client_1\\crs\\sbs");
+	
+	for(File file: f.listFiles() ) {
+		System.out.println(file.getName() );
+	}
