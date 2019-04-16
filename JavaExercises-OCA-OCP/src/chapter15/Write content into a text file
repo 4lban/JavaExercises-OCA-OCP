@@ -1,0 +1,22 @@
+WRITER
+
+- Writes a character to a stream.
+- Works with an OutputStream so you need to use an OutputStream.
+
+void			write(char[] cbuf)						Writes an array of characters.
+abstract void	write(char[] cbuf, int off, int len)	Writes a portion of an array of characters.
+void			write(int c) 							Writes a single character.
+
+...
+
+USING FILEWRITER
+
+FileWriter writer = new FileWriter(new File("C:\\test2\\sonuc.txt"));
+writer.append(builder.toString());
+writer.flush();
+
+FLUSHING THE STREAM
+- Flush method complete the actual writing to the disk
+- If you don't flush the stream, all the data is stored in the stream and can not be written to the disk.
+- Don't forget flushing after writing to the stream.
+
