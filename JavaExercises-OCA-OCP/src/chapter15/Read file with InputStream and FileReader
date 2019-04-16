@@ -1,0 +1,20 @@
+Read file with InputStream and FileReader
+
+- Reader implementations are used to read character array (text) from a source
+- Writer implementations are used to write character array (text) to a target.
+- They both work on streams and provide special methods for character processing.
+
+READER IMPLEMENTATIONS
+- Reader automatically converts raw bytes to proper unicode (UTF8-UTF-16) and helps the developer.
+  Reader impementations are:
+  	- InputStreamReader
+  	- CharArrayReader
+  	- FileReader
+  	
+READER
+- Reader instance reads character from a stream one by one.
+- Works around a stream. So you need to use an InputStream and Reader together.
+
+int				read()								Reads a single character.
+int				read(char[]cbuf )					Reads characters into an array.
+abstract int	read(char[]cbuf,int off,int len)	Reads characters into an array.

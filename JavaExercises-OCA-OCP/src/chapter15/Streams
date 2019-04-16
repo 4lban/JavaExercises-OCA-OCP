@@ -1,0 +1,38 @@
+STREAMS
+
+- Writing and reading done with streams.
+- Any channel to an external source or target is called as stream.
+
+- For getting data from a source we use several InputStream implementations.
+- For writing data to a target, we use several OutputStream implementations.
+
+						   		  Stream
+							  		|				
+			  Input_________________|_________________Output
+			    |									 	|
+			    |							 			|
+	  Char______|______Byte					Byte________|_____Char
+	(Reader)		(InputStream)	   (OutputStream)		(Writer)
+	
+	
+INPUTSTREAM IMPLEMENTATIONS
+
+	BINARY						CHARACTER
+	ByteArrayInputStream		CharArrayReader
+	FileInputStream				FileReader
+	FilterInputStream			FilterReader
+	ObjectInputStream
+	PipedInputStream
+	SequenceInputStream			PipedReader
+	StringBufferInputStream		StringReader
+	
+	Character			Binary					Explanation
+	Writer				OutputStream			Abstract class for character-output streams
+	BufferedWriter		BufferedOutputStream	Buffers output, uses platform's line separator
+	CharArrayWriter		ByteArrayOutputStream	Writes to a character array
+	FilterWriter		FilterOutputStream		Abstract class for filtered character output
+	OutputStreamWriter							Translates a character stream into a byte stream
+	FileWriter			FileOutputStream		Translates a character stream into a byte file
+	PrintWriter			PrintStream				Prints values and objects to a Writer
+	PipedWriter			PipedOutputStream		Writes to a PipedReader
+	StringWriter								Writes to a String
