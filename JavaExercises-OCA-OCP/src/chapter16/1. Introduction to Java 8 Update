@@ -1,0 +1,36 @@
+FUNCTIONAL PROGRAMMING IN JAVA 8
+
+Greatest update to Java
+
+- Inspired by JVM languages such as Scala and Clojure and frameworks like Guava
+- Rise of functional programming
+
+WHAT IS FUNCTIONAL PROGRAM
+- A programming style that treats computation as the evaluation of mathematical
+  functions and avoids changing-state and mutable data.
+- Based on lambda calculus. (Some inputs are transformed to some output without
+  modifying the input)
+- No iteration, no for loop. no variable.
+
+NO ITERATION?
+- What? Without a for loop, how I will process all elements of an ArrayList?
+- Yes seems weird. You need to change your mindset. Mind bending at first.
+
+Imperative
+	List<String> errors = new ArrayList<>();
+	int errorCount = 0;
+	File file = new File(fileName);
+	String line = file.readLine();
+	while(errorCount < 40 && line != null) {
+		if(line.startsWith("ERROR")) {
+			errors.add(line);
+			errorCount++;
+		}
+		line = file.readLine();
+	}
+	
+Functional
+	Files.lines(Paths.get(fileName))
+		.filter(l -> l.startsWith("ERROR")
+		.limit(40)
+		.collect(toList());

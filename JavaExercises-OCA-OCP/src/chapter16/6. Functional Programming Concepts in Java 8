@@ -1,0 +1,31 @@
+ELEMENTS OF FUNCTIONAL PROGRAMMING
+- Immutable state (yes, get rid of mutable state, the evil.)
+- No side effects of function apply. (Input arguments are not modified)
+- No iteration. Only recursion
+- Function references and function compositions
+- Higher order functions (functions may be passed as arguments to other functions and currying (partial evaluation))
+- Lazy evaluation of collections
+- No null value
+
+JAVA 8 PRETENDS TO BE A FUNCTIONAL PROGRAMMING LANGUAGE
+Attribute							Java 8 Solution (or pretend to be a solution)
+ Immutable state					  final keyword, Immutable collections
+ 									  (Collections.unmodifiableX). Both make the
+ 									  objects and the collection itself immutable
+ Declarative. Not imperative		Use Streams
+ No iteration. Only recursion		No for loop on collections. Instead use Streams and its methods.
+ Function references and function 	All FunctionalInterfaces such as Function, Predicate,
+  composition						  Consumer, Supplier interfaces and lambda expressions.
+ Higher order functions and 		Manual implementation, no real built-in solution
+  currying  
+ Lazy evaluation of collections		take() method of Stream
+ No null value						Optional class
+ Monad 								Stream and Optional ...
+ Function Chaining					Built-in with Function interface
+ 
+ SUMMARY
+- Java 8 brings functional programming elements into the language not in an 
+   academical and formal level but has a goodwill to have them
+- Lambda expressions
+- Stream
+- @FunctionalIterface and some others... 

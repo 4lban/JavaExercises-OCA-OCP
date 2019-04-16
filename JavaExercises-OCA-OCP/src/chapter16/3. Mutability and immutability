@@ -1,0 +1,8 @@
+Why so afraid of mutability?
+- Do you remember synchronised keyword, Barriers,
+  Semaphores, Locks and their lack of sweetness?
+- Have you ever scratched your hair because of deadlocks,
+  thread starving, unexpected values of non-atomic object
+  operations?
+- We created the devil, intentionally, ourselves, We! Phew!
+  Why?

@@ -1,0 +1,22 @@
+FUNCTION... YOU MEAN METHOD???
+- No, I don't mean the methods inside a class we defined a million times.
+- Repeat after me: FUNCTION IS NOT METHOD!
+- Methods are not independent program units and they are bound to another context, 
+  like an object instance or class.
+- Methods may depend upon values other than its arguments
+- Methods may change the values of its arguments or some other static values
+- Pure functions are opposite.
+
+WHAT IS A FUNCTION?
+- Lives dependently
+- Does not depend to any value other than its arguments
+- Only output of a function is a value
+- Does not change any argument's value or any other external value.
+- Functions may return other functions as output.
+- Functions may be composed together regardless of the context
+
+WHAT IS FUNCTIONAL PROGRAMMING
+- Functions exist independently. Not bound to objects or classes
+- Functions can not change the state of any object or value
+- All values are immutable. Hates mutability!
+- No iteration. Operations are done by recursion.

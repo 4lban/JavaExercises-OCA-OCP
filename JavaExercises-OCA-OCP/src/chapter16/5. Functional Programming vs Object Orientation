@@ -1,0 +1,19 @@
+FUNCTIONAL VS OBJECT ORIENTATION
+
+Where is functions?
+FUNCTIONAL		OBJECT ORIENTED					JAVA 8
+Independent		Bound to object or classes.		Functional interface (Seems independent
+				Called as method.				but bound to object or class again)
+
+Value state
+FUNCTIONAL		OBJECT ORIENTED					JAVA 8
+Immutable		Mutable							Immutable if you desire
+
+Function chaining
+FUNCTIONAL		OBJECT ORIENTED					JAVA 8
+Yes				Yes if in same instance			Lambda functions may chain
+
+Synchronization and multicore support
+FUNCTIONAL		OBJECT ORIENTED					JAVA 8
+Great!!!		Exist but really a cumbersome	Some much easy than Java 7.
+			

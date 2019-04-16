@@ -1,0 +1,11 @@
+MULTICORE SUPPORT AND THREAD SYNCHRONIZATION IN JAVA
+- For/Join for multicore in Java
+- Thread and ThreadPool for multi-thread
+- Leverage all cores of CPU. Distribute the tasks each core and then combine the results
+
+BIG-DATA AND MAP-REDUCE
+- Huge data is processed in chunks, each chunk yields an intermediate form of data
+- Intermediate data is combined into single result.
+- None of the functions may affect each other but simply yield a single result without a side effect.
+- Each operation must be an independent pure function.
+- So, functional programming is cut out for these type of problems.
