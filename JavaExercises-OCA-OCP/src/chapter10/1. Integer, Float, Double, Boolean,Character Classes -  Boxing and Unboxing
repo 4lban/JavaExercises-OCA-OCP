@@ -1,0 +1,23 @@
+WRAPPER CLASS OF PRIMITIVES
+- Primitives are the exceptional type of an object oriented language.
+- They need to be wrapped into a class in some cases to be used properly.
+
+Wrapper class
+	Conversion functions
+	Utility functions
+	Primitive value
+	
+Primitive Type		Wrapper Class
+	int				Integer
+	float			Float
+	double			Double
+	long			Long
+	short			Short
+	char			Character
+	
+BOXING, AUTOBOXING AND UNBOXING
+- Boxing: To put a primitive value into corresponding class instance.
+- Auto-boxing: Java boxes the primitive value when it is assigned to a corresponding class reference.
+- Unboxing: Getting a primitive value from Integer, Short, Long, Float, Double Character instance.
+
+WrapperClassDemo.java

@@ -1,0 +1,33 @@
+CALENDAR CLASS
+
+- Much more complex class than java.util.Date
+- Have ability to manipulate date and time
+- Have ability to see so much detail of the date inside.
+- Have ability to change locale and timezone.
+
+- It is an abstract class. Direct implementation of it is GregorianCalendar.
+- Get an instance with current time:
+  Calendar.getInstance();
+ 	Has several fields to store the class
+		YEAR
+		MONTH
+		DAY_OF_MONTH
+		WEEK_OF_MONTH
+		DAY_OF_WEEK
+		HOUR_OF_DAY
+		
+MANIPULATING TIME IN CALENDAR
+- You can set, add, substraact any integer value from any field  of the Calendar instance with:
+	calendar_instance.add(field, value);
+	calendar_instance.set(field, value);
+	
+- Exercise: Find when our course will end. (25 weeks left)
+
+	Calendar c = new Calendar.getInstance();
+	int week = c.get(Calendar.WEEK_OF_YEAR);
+	week += 25;
+	c.set(Calendar.WEEK_OF_YEAR, week);
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	System.out.println(sdf.format(c.getTime()));
+	
+CalendarDemo.java

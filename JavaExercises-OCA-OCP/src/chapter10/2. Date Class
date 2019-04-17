@@ -1,0 +1,25 @@
+ TIME
+ 
+Date and Time Classes
+
+- Date: Simple class to represent a given time.
+	- Do not modify the time inside.
+ 	- Used for simple time comparisons and string-time conversions
+ 	
+- Calendar: Complex class to be able to manipulate the date and time inside.
+
+Date
+- Created as a regular Java object and stores the current time by default.
+- Used for
+	- Simple string time conversations
+	- Comparing dates, times
+For all other tasks, Calendar class is used.
+
+ Date date = new Date();
+ date.getTime();  // returns the milliseconds from 1.1.1970
+ date.before(date2);
+ date.compare(date3);
+ 
+ DateDemonstration.java
+
+ 

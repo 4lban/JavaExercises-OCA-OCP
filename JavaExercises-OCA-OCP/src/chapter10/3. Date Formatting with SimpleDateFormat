@@ -1,0 +1,19 @@
+FORMATING DATE
+
+- Done with SimpleDateFormat class.
+- This class may convert a String to Date and vice versa.
+
+- Format is something like dd/MM/yyyy hh:mm:ss
+
+- d: Day digit
+- M: Month digit
+- y: year digit
+- m: minute
+- s: second
+
+ SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+ SimpleDateFormat sdf2 = new SimpleDateFormat("dd.MM.yy"); 
+ System.out.println(sdf.format(new Date()));
+ System.out.println(sdf2.format(new Date()));
+ 
+ DateFormatting.java

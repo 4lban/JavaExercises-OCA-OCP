@@ -1,0 +1,16 @@
+CONVERSION BETWEEN STRING AND DATE
+
+ String										
+		SimpleDateFormat parse() method     |
+ Date										|
+		Calendar setTime() method			v
+ Calendar
+
+ Calendar
+		Calendar getTime() method			|
+ Date										|
+		SimpleDateFormat format() method	v
+ String		
+ 
+ 
+TimeConversions.java
