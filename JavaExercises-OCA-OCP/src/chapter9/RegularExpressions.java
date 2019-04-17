@@ -15,6 +15,9 @@ public class RegularExpressions {
 		 * Write a regular expression that find all the indexes 
 		 * to break the sentence.
 		 */
+		System.out.println("***********************************************");
+		System.out.println("12. Regular expressions - Further Examples");
+		System.out.println("***********************************************");
 
 		String sentence = "I've  met many who have earned      their PhD in Computer Science with great hardship and suffering.";
 		
@@ -27,7 +30,7 @@ public class RegularExpressions {
 		
 		
 		//***************************************************************
-		System.out.println("********************************************");
+		System.out.println("--------------------------------------------");
 		
 		sentence = "I've  met many who have earned          their PhD in Computer Science with great hardship and suffering..."
 				+ "it is as if they have gone to hell and come back!however, most of them can hardly write any software code."
@@ -43,9 +46,10 @@ public class RegularExpressions {
 			System.out.println("word: " + word);
 		}
 		
-		//***************************************************************
-		System.out.println("********************************************");
-		
+		System.out.println("\n************************************************************");
+		System.out.println("13. Email address validation with regex and matcher class");
+		System.out.println("************************************************************");
+	
 		String[] emails = {
 			"btmaxhuni@",
 			"btmaxhuni@d",
@@ -72,9 +76,10 @@ public class RegularExpressions {
 			System.out.println(string + "\t" + matcher.matches());
 		}
 		
-		//***************************************************************
-		System.out.println("********************************************");
-		
+		System.out.println("\n*****************************************************************************");
+		System.out.println("15. Extracting useful data from input with regex and matcher.group() method");
+		System.out.println("******************************************************************************");
+			
 		String[] urls = {
 			"https://www.google.com/search",
 			"https://wwwgoogle.com/search",
