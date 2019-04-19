@@ -20,6 +20,7 @@ public class StringBufferExample {
 		
 		// it creates stringbuffer variable with default length
 		// so it create only one string and modifies it
+//		StringBuffer buffer = new StringBuffer(1000);	// 1000 character length
 		StringBuffer buffer = new StringBuffer();
 		buffer.append("maxhuni");
 		buffer.append("alban");
@@ -35,6 +36,7 @@ public class StringBufferExample {
 		StringBuffer buffer2 = new StringBuffer();
 		buffer2.append("alban");
 		buffer2.insert(0, "kosovo");
+		System.out.println(buffer2.toString());
 		buffer2.delete(2, 5);
 		System.out.println(buffer2.toString());
 		

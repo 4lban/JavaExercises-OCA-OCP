@@ -12,6 +12,8 @@ public enum LoanStatus {
 //	PAID,
 //	DEBTED;
 	
+// ***************************************************************
+	
 	NOT_STARTED("NS"), 
 	APPLIED("APP"),
 	ASSESMENT("ASSESS"),
@@ -30,13 +32,13 @@ public enum LoanStatus {
 	}
 	
 	public static LoanStatus findByDbKey(String dbKey) {
-		LoanStatus[] allValues = LoanStatus.values();
+		LoanStatus[] allValues = LoanStatus.values();	// get all values
 		for (int i = 0; i < allValues.length; i++) {
 			if (allValues[i].dbKey.equals(dbKey)) {
 				return allValues[i];
 			}
 		}
-		return UNKNOWN;
+		return UNKNOWN;	
 	}
 	
 }

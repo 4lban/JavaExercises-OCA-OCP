@@ -1,0 +1,25 @@
+ENUMERATION
+
+WHAT IS ENUM?
+- Enum is a special class for limiting the possible values for a field.
+- You list all possible values that a field can be assigned 
+
+ENUM EXAMPLE
+- For instance our Person class has gender and licensed fields.
+- Gender may be MALE, FEMALE or OTHER
+- Licensed fields have two possible values: LICENSED and UNLICENSED.
+
+	public enum Gender {  
+		MALE,
+		FEMALE,
+		OTHER
+	}
+
+USAGE OF ENUM
+- When you call Gender.MALE you get an Gender instance.
+- You can not set anything else to a Gender attribute. This is what enum for.
+
+
+LoanStatus.java
+EnumExample.java
+Loan.java

@@ -15,6 +15,4 @@ public class Loan {
 		status = LoanStatus.NOT_STARTED;
 	}
 	
-	
-	
 }
