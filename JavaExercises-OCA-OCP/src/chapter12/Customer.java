@@ -44,11 +44,14 @@ public class Customer {
 		if(this == null || obj == null) {
 			return false;
 		} 
-		
 		if (this.id == ((Customer)obj).id){
 			return true;
 		}
-		
 		return false;
+	}
+	
+	@Override
+	public int hashCode() {
+		return 11*id + 13*name.hashCode();
 	}
 }

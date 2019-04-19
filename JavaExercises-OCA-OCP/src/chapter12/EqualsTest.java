@@ -1,7 +1,5 @@
 package chapter12;
 
-import java.io.ObjectInputStream.GetField;
-
 public class EqualsTest {
 
 	public static void main(String[] args) {
@@ -15,8 +13,6 @@ public class EqualsTest {
 		
 		boolean isSame = c1.equals(c4);
 		System.out.println(isSame);
-		
-		
 		
 	}
 

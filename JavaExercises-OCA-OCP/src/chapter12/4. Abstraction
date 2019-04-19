@@ -1,0 +1,11 @@
+ABSTRATCTION
+ 
+Abstraction means
+1. Hiding the details of a process from the requestor.
+2. Defining a contract for the client and service provider
+3. Defining a contract for all providers should accept before servicing to clients.
+
+ABSTRACTION IN JAVA
+Two ways:
+1. Interface: No implementation, only contract
+2. Abstract classes: Contract with some implementations details.

@@ -1,0 +1,35 @@
+ABSTRACT CLASS
+
+- Second way of abstraction in Java.
+- Contract that define the overall structure and with some possible implementation details.
+- An instance cannot be instantiated. Should be extended and all the methods must be implemented.
+
+
+CREATING ABSTRACT CLASS
+
+	public abstract class class_name {
+	
+		any variables
+		method signatures and implementations
+		
+	}
+	
+EXAMPLE
+- Send your blog posts into a blog system.
+- Everyone may develop its own client but obey the rules of abstract class named BlogPost.
+  BlogPost class has these fields and their getters/setters.
+  
+- field				type			Defualt						Mandatory
+  text				String										yes		
+  header			String			first 4 words of the text	No
+  tags				String[]		Default is randomly			No
+  									selected three words.
+  author_nickname	String			first name + "_" +			no
+  									last name
+  first_name		String										Yes
+  last_name			String										Yes
+  
+  
+BlogPost.java	(abstract)
+TestBlog.java
+JavathlonBlogPost

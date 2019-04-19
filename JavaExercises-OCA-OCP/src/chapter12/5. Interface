@@ -1,0 +1,25 @@
+INTERFACES
+
+Creating an Interface
+
+modifier interface InterfaceName
+{
+	constants declarations;
+	methods signatures;
+}
+
+
+Example of Creating an Interface
+
+public interface HumanResourceDepartment
+{
+	public String getLeaveRequest();
+	public float[] getSalariesOfWorkers();
+	public void applyForSocialSecurity();
+}
+
+
+HumanResourceAgreement.java (interface)
+GoogleHumanResource.java
+AmazonHumanResource.java
+InterfaceTest.java
