@@ -1,0 +1,60 @@
+INHERITANCE
+
+OOP
+- Abstraction
+- Encapsulation
++ Inheritance
+- Polymorphism
+
+If you inherit some realty, you may develop you
+ business way more quickly
+ 
+ 
+WHY REUSABILITY IS IMPORTANT?
+
+Software development is a long-lasting process. Bugs are resolved, 
+ code is updated for new requirements by the time passing
+ 
+Software programming is a collaborative task. Either your team or 
+ third party team might developed the module before.
+ 
+- Now, let's say you have another pre-developed class that meet your requirement
+ with some slight changes or some improvements.
+- In this case, you absorb the already existing behaviours and values from 
+ a class and inherit to another class with some changes.
+- This is what reusability means.
+
+
+INHERITANCE CONCEPT
+- Create a new class by taking a pre-existing class as a base.
+ - Pre-existing base class is called as super class.
+ - New class that uses the super class is called as derived class or sub-class.
+ 
+ 			   Vehicle
+ 		__________|__________
+ 		|		  |			|
+ 	  Car		 Bus	  Plane
+ 	  
+
+IS-A RELATIONSHIP
+- There is "is-a relationship" between super class and derived class.
+  If in real world, there is a "is-a" relationship between two entities, 
+  corresponding classes may use inheritance in programming.
+- Eg: Car-Plane-Vehicle: Both car and plane are vehicles and they may absorb
+  some behaviours and attributes from Vehicle class.	\
+  
+
+WHY INHERITANCE IS IMPORTANT?
+- When you changes something in the methods of an existing class, reflecting this 
+  change to the derived classes automatically is also a great future.
+- By using inheritance, derived classes absorb the modifications without any extra effort.
+
+
+COMPOSITE VS INHERITANCE
+- Composite has "has-a" relationship between objects.
+- For instance:
+	- Plane has some seats.
+	- Seats belong to plane.
+- Inheritance:
+	- Plane is a vehicle
+	- Vehicle is a more-generalized term for plane.

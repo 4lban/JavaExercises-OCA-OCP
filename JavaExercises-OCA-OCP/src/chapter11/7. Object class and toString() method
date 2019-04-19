@@ -1,0 +1,29 @@
+Object class
+
+Object is super class for all Java classes
+Any class without explicit extends clause is a direct subclass of Object.
+Because all of the object instances have some common features:
+- Logical comparison to other instances with same type: equals() method
+- Summarizing the data inside as a string: toString() method
+- Summarizing the data inside accordin to a customized hashCode() method
+
+
+Method toString()
+- Returns String representation of object: describes state of object
+- Automatically called when:
+	- Object is concatenated with a String
+	- Object is printed using print() or println()
+	- Object reference is passed to assert statement
+
+Example
+
+	Rectangle r = new Rectangle(0, 0, 20, 40);
+	System.out.println(r);
+	
+More on toString()
+- Default toString() method just prints (full) class name & hash code of object
+- Not all API classes override toString()
+- Good idea to implement for debugging purposes:
+	- Should return String containing values of important fields along with their
+	  names
+	- Should also return result of getClass().getName() rather than hard coded class name

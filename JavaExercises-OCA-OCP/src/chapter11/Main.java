@@ -10,9 +10,9 @@ public class Main {
 		 
 		Customer c1 = new Customer(01, "Alban", "Maxhuni", true, 'm');
 		Customer c2 = new Customer(05, "Ardian", "Maxhuni", false, 'm');
-		Customer c3 = new Customer(12, "Advie", "Maxhuni", true, 'f');
+		Customer c3 = new Customer(12, "Adi", "Maxhuni", true, 'f');
 		Customer c4 = new Customer(45, "Hashim", "Maxhuni", false, 'm');
-		Customer c5 = new Customer(44, "Ardiana", "Rama", true, 'f');
+		Customer c5 = new Customer(44, "Lana", "Rama", true, 'f');
 		Customer c6 = new Customer(13, "Gent", "Mucolli", true, 'm');
 		
 //		car.listSeats();

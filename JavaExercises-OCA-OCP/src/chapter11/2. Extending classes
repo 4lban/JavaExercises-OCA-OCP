@@ -1,0 +1,31 @@
+HOW TO INHERIT
+
+- Inheriting the behaviours of another class is made by extending this class.
+
+- class Vehicle()
+- class Plane extends Vehicle{}
+
+
+WHAT HAPPENS WHEN YOU EXTEND A CLASS ?
+When you extend a class these properties are absorbed by the derived class:
+- protected fields
+- public and default fields
+- protected methods
+- public and default methods
+
+
+DERIVED CLASS
+- Derived class is a specialized, more specific version of a super class.
+  That's why, we define wheelCount of Vehicle class as 4 in Car class.
+- Derived class has protected/default/public attributes and methods of super
+  class
+- Derived class may set values for inherited values and add more attributes.
+- Derived class may change the behaviour of methods. 
+
+
+Vehicle.java
+Car.java
+Bus.java
+Plane.java
+Main.java
+

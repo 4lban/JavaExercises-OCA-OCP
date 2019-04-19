@@ -1,0 +1,9 @@
+OVERRIDING METHODS
+
+- Derived class may change a method that implemented in the super class.
+- That is called as overriding a method. This is all about polymorphism 
+  in object oriented programming.
+- Attributes also might be overriden to specialize the object.
+
+
+Adding seats/Customer inside Vehicle
