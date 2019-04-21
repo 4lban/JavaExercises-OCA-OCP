@@ -1,0 +1,11 @@
+Sending Post Requests with JSON data to webservices
+
+We going to connect to a real web server from our Java application and parse Http responses
+ send Json http request with post method and
+ get Json data with http get method
+
+we will you mock web services, https://reqres.in
+
+ReqresApplication.java
+UserRegistrationRequest.java
+UserRegistrationResponse.java

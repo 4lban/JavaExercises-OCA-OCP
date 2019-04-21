@@ -1,4 +1,4 @@
-package chapter18;
+package chapter18.HttpSample;
 
 public class ItemInformation {
 
