@@ -1,11 +1,17 @@
 package chapter18;
 
+import java.util.Date;
+
+import com.google.gson.annotations.SerializedName;
+
 public class Customer {
 
 	private String name;
 	private String surname;
+	private Date registerDate;
 	
-	private ShoppingCard shopping_cart;
+	@SerializedName(value = "shopping_cart")		//override the name of attribute as "AS" in db
+	private ShoppingCart shoppingCart;
 	
 	public String getName() {
 		return name;
@@ -19,11 +25,18 @@ public class Customer {
 	public void setSurname(String surname) {
 		this.surname = surname;
 	}
-	public ShoppingCard getShopping_cart() {
-		return shopping_cart;
+	
+	public Date getRegisterDate() {
+		return registerDate;
 	}
-	public void setShopping_cart(ShoppingCard shopping_cart) {
-		this.shopping_cart = shopping_cart;
+	public void setRegisterDate(Date registerDate) {
+		this.registerDate = registerDate;
+	}
+	public ShoppingCart getShoppingCart() {
+		return shoppingCart;
+	}
+	public void setShoppingCart(ShoppingCart shoppingCart) {
+		this.shoppingCart = shoppingCart;
 	}
 	
 	

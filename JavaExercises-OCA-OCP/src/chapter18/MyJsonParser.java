@@ -9,7 +9,7 @@ import java.util.List;
 import com.google.gson.Gson;
 
 public class MyJsonParser {
-	 // download GSON json library
+	 // Deserialization, Json to Java object,  download GSON json library
 	
 	public static void main(String[] args) {
 		
@@ -27,12 +27,12 @@ public class MyJsonParser {
 			
 			Gson gson = new Gson();
 			MyJsonObject myJsonObject = gson.fromJson(stringBuffer.toString(), MyJsonObject.class); // JSON to java object
-			System.out.println("duration miliseconds: " + myJsonObject.getDuration_ms());
+			System.out.println("duration miliseconds: " + myJsonObject.getDurationMs());
 			System.out.println("metadata: " + myJsonObject.getMetadata());
 			System.out.println("name of the customer: " + myJsonObject.getCustomer().getName());
 			System.out.println("number of shopping items of the customer: " 
-					+ myJsonObject.getCustomer().getShopping_cart().getItems().size());
-			List<ItemInformation> informationList = myJsonObject.getCustomer().getShopping_cart().getInformation();
+					+ myJsonObject.getCustomer().getShoppingCart().getItems().size());
+			List<ItemInformation> informationList = myJsonObject.getCustomer().getShoppingCart().getInformations();
 			for (ItemInformation info : informationList) {
 				System.out.println("information type : " + info.getType());
 				System.out.println("information price range : " + info.getPriceRange());

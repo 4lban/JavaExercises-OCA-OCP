@@ -2,7 +2,7 @@ package chapter18;
 
 import java.util.List;
 
-public class ShoppingCard {
+public class ShoppingCart {
 
 	private List<String> items;
 	
@@ -16,11 +16,11 @@ public class ShoppingCard {
 		this.items = items;
 	}
 
-	public List<ItemInformation> getInformation() {
+	public List<ItemInformation> getInformations() {
 		return informations;
 	}
 
-	public void setInformation(List<ItemInformation> informations) {
+	public void setInformations(List<ItemInformation> informations) {
 		this.informations = informations;
 	}
 	
