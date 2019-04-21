@@ -1,0 +1,40 @@
+TEMPORAL INTERFACE
+
+- All date and time representing classes implement this interface
+- LocalDateTime, LocalDate, LocalTime, ZonedDateTime, OffsetDateTime, Instant
+	Year, YearMonth, HijrahDate, JapanaseDate, MinguoDate, ThaiBuddhistDate class
+	implements Temporal
+- Arithmetic functions and builder method arguments are Temporal since we need
+	type of objects be available on these classes.
+	
+	
+INSTANT and INTERVAL
+- Instant: Nanosecond precision of time
+  __________________________________________________________
+  				^								Time-line 
+  				|
+  			 Instant
+  
+- Interval: Interval of time on timeline
+  __________________________________________________________
+  			^						^			Time-line 
+  			|_______________________|
+  Start Instant     Interval		End Instant
+  
+  
+DURATION and PERIOD
+- Duration is the time model in terms of seconds and nanoseconds
+- Used for representing durations not a point on timeline
+- End time is optional. Duration is used for calculating the end time mostly.
+- If end time is given, it can be used for calculating the time difference between two points on timeline.
+- Period is the same thing but used on dates not times.
+  __________________________________________________________
+  			_________________________			Time-line
+  			  		Duration
+  			  		
+CHRONOUNIT
+- An enumeration representing standard set of Period units.
+- Used for date arithmetic units.
+- YEARS, MONTHS, DAYS, HOURS, MINUTES, SECONDS, MILLIS etc...
+
+DateOperations.java

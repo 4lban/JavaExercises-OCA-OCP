@@ -1,0 +1,17 @@
+JAVA 8
+DATE AND TIME API
+
+PROBLEMS OF PREVIOUS DATE & TIME
+- Objects were mutable
+- Full of confusion. Default Date starts from 1900, month starts from 1, and day from 0
+- Timezone management was so hard
+- Date and time arithmetics were hard
+- API was not fluent. Not able to chain the methods
+
+OUR AGENDA
+- New date and time classes
+- Period, Instant, Duration, Interval operations
+- New date / time parsing, formatting methods
+- Matcher, Adjuster, Resolver queries
+- Time zone operations
+- Adapting with the previous API
