@@ -1,0 +1,3 @@
+Update statements and executing from Java application
+
+update restaurant set name = 'Restaurant Rugova', address = 'Aktash' where restaurant_id = 3;

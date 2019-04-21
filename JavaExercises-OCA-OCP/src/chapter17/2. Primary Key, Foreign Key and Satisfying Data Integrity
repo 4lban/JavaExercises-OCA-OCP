@@ -1,0 +1,8 @@
+WORKING WITH DATABASE
+
+Table: A real world or imaginary entity model that has attributes. (A user metadata)
+Row: An instance of a entity model (A user instance)
+Column: Attribute of an entity (User's name)
+Primary key: Identifier of a instance (User's id)
+Foreign key: Dependency of an entity to another entity (Reference to user
+

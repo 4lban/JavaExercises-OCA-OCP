@@ -1,0 +1,19 @@
+6. Select statements and executing from Java application
+
+DBApplication.java
+
+PreparedStatement wraps SQL statements and send to JDBC driver and to then to MySQL server
+So we need to reference to current connection
+(eg. PreparedStatement p = connection.prepareStatement("select * from table");
+- executeQuery()	execute select queries, returns ResultSet data
+- execute() 		execute update and delete operations, returns boolean
+- executeUpdate()	execute update, return number of rows updated
+- getGeneratedKeys()	return auto-incremented keys as ResultSet
+
+RESULT SET OBJECT
+wraps all the rows that return from SQL state sequence and stored as a Collection
+
+Initially, it points to the very beginning of the ResultSet object
+ but not the first row. To get the first record we 
+ need to invoke next() before iterating
+

@@ -1,0 +1,3 @@
+Insert statements and executing from Java application
+
+INSERT INTO restaurant(name) values ("KFC");

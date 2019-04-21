@@ -1,0 +1,7 @@
+Binding dynamic variables to PreparedStatement for faster SQL execution
+
+"select * form table where id = ?"
+preparedStatement.setInt(place of question mark, value);
+preparedStatement.setInt(1, 2);	// 1 because it is first '?' in statement
+
+this manner optimize the code and execution time

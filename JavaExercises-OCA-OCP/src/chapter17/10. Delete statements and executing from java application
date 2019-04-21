@@ -1,0 +1,3 @@
+Delete statements and executing from java application
+
+delete from restaurant where name = 'Amaro 2';

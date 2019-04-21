@@ -1,0 +1,27 @@
+DATABASE TRANSACTIONS
+
+A unit of work performed within a database management system against a database
+
+If one operation (intermediate state) fail all operation will roll back
+The intermediate states are visible only to current session
+
+To be visible to all other sessions need to commit in Java code
+ to make transaction successfull
+ 
+ 
+ 
+ 									 commit
+ initial						 -----------------> Transaction succeeded	
+ State   ----------> Transaction 
+								 -----------------> Transaction failed
+									rollback
+									
+									
+- void setAutoCommit(boolean status)			
+	It is true by default means each transaction is committed by default.
+	
+- void commit()
+	commits the transaction.
+	
+- void rollback()
+	cancels the transaction.

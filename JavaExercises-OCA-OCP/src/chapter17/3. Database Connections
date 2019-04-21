@@ -1,0 +1,17 @@
+WHY WE NEED DATABASE CONNECTION
+
+	 Java web    <------------------------------>  DB
+	application           DB CONNECTION           SERVER
+	
+ We send the commands to DB server and get the results via an open DB connections.
+ 
+ Database talks SQL, but Java does not know how to talk in SQL,
+  it needs a translator called JDBC (Java Database Connector)
+ 						  
+ 						  <----> Oracle
+ 						  <----> DB2
+ 	Java web   ----> JDBC <----> Sybase
+	application			  <----> SQL Server
+ 						  <----> MySQL
+  					Database specific JDBC driver
+  					

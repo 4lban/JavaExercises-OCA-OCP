@@ -1,0 +1,25 @@
+WORKING WITH DATABASE
+
+A database is any file or file system that you can
+- store your data
+- manipulate data
+- search for a desired item
+
+- Flat files (text or binary)
+- Flat file systems
+- Non-relational databases (eg. MongoDB)
+- Relational databases (eg. MySQL)
+
+Relational Database Systems (RDBMS):
+Ease your tasks for quickly inserting, updating, querying, 
+deleting the data you have on your hands using SQL.
+ - MySQL
+ - SQL Server
+ - Oracle
+ - PostgreSQL
+- Stores the data in tables and relations between those tables.
+
+Open MySQL Workbench
+	table is a data type (eg. Customer)
+	row is a single instance of (eg. customer)
+ 
