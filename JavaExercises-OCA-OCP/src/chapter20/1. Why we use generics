@@ -1,0 +1,21 @@
+GENERICS
+
+Less fragile, more convenient apps by compile time errors 
+	instead of possible runtime errors
+	
+RUNTIME ERRORS vs COMPILE TIME ERRORS
+- Compile time errors is checked by Java compiler and prevents you build 
+	that may couse errors on fly. Cost is low. You just change the code 
+	before distribution of the app
+- Runtime errors are programming errors that can be faced after deployment
+	application to the users. Cost is high: Bad user experience, loss of users,
+	and distribution cost, loss of trust by customers
+	
+USE OF GENERICS - TYPE SAFETY
+- Java is a type-safe language
+- Generics force type-safe programming more and more for more stable applications
+- Restricts specific type of objects inside collections and methods
+- A list that may contain only String items:
+	List<String>
+- A list that contain only MyClass instances and instances of subclass of MyClass class:
+	List<? extends MyClass>
