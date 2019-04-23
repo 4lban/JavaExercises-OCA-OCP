@@ -1,0 +1,49 @@
+J2EE COMPONENTS
+Basic Web Applications
+
+Client - Server Web Applications	(two tier architecture)
+
+ 		 
+  CLIENT    <---------HTTP Protocol-------->	SERVER			
+ HTML page								Process data and respond with result
+ 
+ 
+ HTTP PROTOCOL standard behaviors
+ - GET method
+ 	Ask server for a resource via a URI
+ 	(HTML page, image, MP3 etc)
+ - POST method
+ 	Send a web form to server and get a resource
+ - HEAD, PUT, DELETE, TRACE
+ 
+Client side - JSP for Java
+ Regardless of the technology you use for client side, they are converted to HTML
+ 
+Server side -
+may return a basic string by AJAX and XML instead of entire HTML page
+
+
+  CLIENT    <---------HTTP Protocol-------->	SERVER			
+ JSP page								Processing unit (SERVLET)
+										Processing unit (SERVLET)
+										
+An application server or a servlet container dispatches HTTP requests to
+	related servletes according to the rules in a deployment descriptor	
+	
+	
+NEED FOR APPLICATION SERVERS					
+- Dispatch requests
+- Thread management
+- Session management
+- Caching and object pooling
+
+
+In short while developing J2EE application we develop JSP and SERVLETS
+	and serve them on the application server and write some configuration
+	files like .XML to regulate the interactions among files
+	We will use Apache Tomcat
+
+
+ 
+ 
+ 

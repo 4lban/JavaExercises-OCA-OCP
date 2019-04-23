@@ -1,0 +1,48 @@
+HttpServlet usage for responding to HTTP post requests
+
+Let's check our web.xml file inside WEB-INF folder
+	
+	If web.xml isn't there
+	 Right click in Deployment Description:, Generate Deployment Descriptor Stub (web.xml)
+
+	web.xml file is a deployment descriptor.
+	It describes the structure of the web application to your web server.
+	 
+	value 'QA_Pro' inside <display-name>QA_Pro</display-name> will be used in our URL
+	 http://localhost:8080/QA_Pro/RegisterMember
+	Different server may work on different ports. Tomcat works on 8080
+	
+	We have servlet configuration under <servlet/>
+	 It's name is RegisterMember
+	 and is requested by URL <url-pattern>/RegisterMember</url-pattern>
+	 so when we type http://localhost:8080/QA_Pro/RegisterMember 
+	 the RegisterMember will be invoked
+	 
+	We have two parameters in this URL
+	http://localhost:8080/QA_Pro/RegisterMember?name=alban&surname=maxhuni
+	 when we click enter this URL these values via GET methods so we need to
+	 implement doGet() method inside RegisterMember servlet
+	 
+	 	String name = request.getParameter("namee");
+		String surname = request.getParameter("surnamee");
+		System.out.println(name + " " + surname);
+		
+	
+Using HTTP Post Method  
+	We created index.jsp inside WebContent folder
+	POST method inside form is used to send all values to the RegisterMember servlet
+	
+	Also we implemented doPost method in RegisterMember servlet
+	
+		System.out.println("Request is a POST request");
+		String name = request.getParameter("name");
+		String surname = request.getParameter("surname");
+		System.out.println(name + " " + surname);
+ 
+
+	
+
+
+	 
+	
+	

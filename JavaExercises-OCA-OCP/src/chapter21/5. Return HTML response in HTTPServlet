@@ -1,0 +1,10 @@
+Return HTML response in HTTPServlet
+
+We have four main ways to respond to a HTTP request
+
+1. First the worst method to return a HTML response
+	It is prefered to use with AJAX requests
+	
+	We implements doPost method
+	
+		request.getParameterValues("blla") ->  gets many selected values as array of String

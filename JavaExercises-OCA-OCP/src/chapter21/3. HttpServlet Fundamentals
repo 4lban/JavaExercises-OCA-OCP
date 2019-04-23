@@ -1,0 +1,40 @@
+HttpServlet Fundamentals
+
+									------------------------------------>
+									 Return an HTML content
+									------------------------------------>	
+Http Servlet Request				 Return a multimedia file
+------------------------->  SERVLET ------------------------------------>
+Get or Post Method					 Redirect the client to a page
+									------------------------------------>
+									 Forward request to another servlet
+									 
+
+	GET method
+ ------------------------------------------------------------->	SERVLET
+  When you enter a web address to a web browser,
+  it requests the resource by GET method.
+  The request body is limited to about 250 characters.
+  
+  Sample:https://www.google.com.ks/?q=java&safe=off&output=search
+  
+  
+  	POST method
+ -------------------------------------------------------------->
+  You need to send a web form for using POST method.
+  The request body is limitless
+  
+  
+
+				 Return an HTML content				  Content-Type: text/html
+				------------------------------------> Use: PrintWriter object
+				
+Request			 Return a multimedia file			  Content-Type: application/pdf, image/jpeg...
+------> SERVLET ------------------------------------> Use: OutputStream object of HTTPServletResponse
+ 
+				 Redirect the client to a page    	  Content-Type: none
+				------------------------------------> Use: sendRedirect() method
+				
+				 Forward request to another servlet   Content-Type: none
+				------------------------------------> Use: RequestDispatcher object of ServletContext
+ 			 

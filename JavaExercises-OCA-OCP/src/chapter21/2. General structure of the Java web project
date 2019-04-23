@@ -1,0 +1,36 @@
+Open Eclipse in Java EE perspective
+New Dynamic Web Project
+Named --> QA_Pro
+
+'Java Resources' will include your servlets source files
+'build' folder will include binary (compiled) version of your servlets
+'WebContent' hold all data related to web page, HTML, JSP, XML, JavaScript, CSS etc..
+'WEB-INF' holds your secret files that are invisible to web browser 
+	If you want your files to be found by the web browser directly just put them
+	in WebContent but outside of WEB-INF
+
+	
+Install Tomcat Server
+	We need to have installed modules to be able to install Tomcat
+	'Server adapters' for use with the JST server tools
+	'Server adapters extensions' for use with the JST server tools
+	
+Let's start with a basic page
+	WebContent, New, JSP File, 'index.jsp'
+	It's a basic HMTL page but has some special notation like
+	<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%> tells that is written by Java
+    Need to change to charset=UTF-8 and pageEncoding="UTF-8"%>
+    
+Let's create a new Servlet
+	New, Servlet
+	Java package name should be unique in all the world: com.quapro.register
+	Class name: RegisterMember
+	Superclass: javax.servlet.http.HttpServlet
+	Finish
+	
+	File src.com.quapro.register.RegisterMember.java has been created
+		If Exception HttpServlet cannot be resolved to a type
+		 BuildPath, Project Facets, Runtimes, and tick Apache Tomcat Server
+	
+	
