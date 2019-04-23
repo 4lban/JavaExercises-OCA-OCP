@@ -1,0 +1,38 @@
+Anatomy of the HTTP requests in detail and HTTP session
+
+We going to explore details in browser when we press submit button
+
+Session is located store data special to a client and inside of web browser page
+	whenever you call the URL that JESESSIONID=3414324... is always the same
+	
+Open two tabs in web browser and call same URL from each of the tab
+	and we see the JSESSIONID is the same and is stored inside server
+	so whenever we make request JSESSIONID will be shared among requests
+	
+	
+Details of session object
+
+OBJECT SCOPES in SERVLETCONTEXT
+
+At the top of the hierarchy application context exist. (Application Scope)
+ This context has just one instance per server and the same instance is used
+ while our server up and running.
+
+Session scope in a narrower scope than application scope
+	Session object is created for per client.
+	When a brand new client requests something from the application, the session
+	object created identified by JSESSIONID.
+	All attributes in corresponding session object is shared across different requests
+	
+	_________________________________________
+	|	_________________________________ 	|
+	|	| SESSION ID                   	| 	|
+	|	|_______________________________| 	|
+	|										|
+	|			Attribute map				|		  
+	|	_________________________________	|
+	|	|								|	|
+	|	|	name1			value1		|	|
+	|	|	name2			value2		|	|
+	|	|_______________________________|	|
+	|_______________________________________|

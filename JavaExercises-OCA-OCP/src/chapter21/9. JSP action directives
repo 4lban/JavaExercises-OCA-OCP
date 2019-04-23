@@ -1,0 +1,51 @@
+Some important point we learnt so far
+
+Tip for being a wanted J2EE developer
+
+- Avoid using JAVA code inside a JSP file.
+  Use JSP directives and JSP actions instead.
+  
+	no   <%= request.getParameter("name") %>
+	
+- Avoid using HTML code inside a servlet.
+  Instead, use HTML code in JSP page and pass values it from the servlet.
+  
+  	no	response.getWriter().println("<html><body>content</body></html>");
+  	
+
+JSP Actions
+
+- jsp:useBean
+	Searches for an objects inside the given scope 
+		(page, request, session or application scope)
+	
+- jsp:getProperty
+- jsp:setProperty
+	Gets/sets a value of a given object
+	
+	
+jsp:useBean action
+
+	<jsp:useBean
+		id="memberInfo"
+		class="com.qapro.register.MemberInfo"----> request.getParameter("memberInfo")
+		scope="request">
+	</jsp:useBean>
+
+	<jsp:useBean
+		id="memberInfo"
+		class="com.qapro.register.MemberInfo"----> request.getSession().getParameter("memberInfo")
+		scope="session">
+	</jsp:useBean>
+	
+	<jsp:useBean
+		id="memberInfo"
+		class="com.qapro.register.MemberInfo"----> ServletContext sc = getServletContext();
+		scope="request">						   sc.getAttribute("memberInfo")
+	</jsp:useBean>
+	
+
+jsp:getProperty and 
+jsp:setProperty
+
+	Gets/sets an attribute of an object with a given id

@@ -1,0 +1,19 @@
+HTTPSERVLETRESPONSE
+
+
+REDIRECTING REQUEST
+
+Request forwarding and redirection are different concepts.
+
+When you forward a request, request and responds objects are transferred.
+	URL stays the same.
+	
+When you redirect the request to another JSP/servlet, 
+	request and response objects are not transferred to new object.
+	URL changes to the directory of new page.
+	We need an independent page, independent from request parameters.
+	
+	response.sendRedirect("secondstep.jsp");
+	
+
+	

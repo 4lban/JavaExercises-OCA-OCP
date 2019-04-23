@@ -1,0 +1,27 @@
+Demonstration in action
+
+This application will count how many times a servlet is invoked
+We change doPost method to explain how JSESSIONID is shared 
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		System.out.println(request.getSession().getId());
+		
+		HttpSession session = request.getSession();
+		
+		Integer i = (Integer) session.getAttribute("call_count");
+		if(i == null)
+			i = 0;
+		i++;
+		session.setAttribute("call_count", i);
+		System.out.println("call count: " + (Integer)session.getAttribute("call_count"));
+		
+		/**
+		 * Do whatever you want with request paraeter
+		 * Write into a DB, a file etc...
+		 */
+		RequestDispatcher rd = getServletContext().getRequestDispatcher("/registercompleted.jsp");
+		rd.forward(request, response);
+		
+	}
